@@ -1,0 +1,166 @@
+{
+  "notices": [
+    {
+      "id": 1,
+      "idAuthor": 1,
+      "type": "Tecnologia",
+      "title": "WhatsApp agora permite enviar fotos em alta resolução",
+      "description": "O WhatsApp lançou nesta quinta-feira (17) uma nova atualização que permite enviar fotos em alta resolução.O compartilhamento de fotos em HD pode ser utilizado diretamente do mensageiro, permitindo enviar imagens com melhor qualidade.",
+      "createdAt": "17-08-2023 08:45:14",
+      "typeMachine": "technology",
+      "image": "https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg",
+      "likes": 103,
+      "comments": 25
+    },
+    {
+      "id": 2,
+      "idAuthor": 2,
+      "type": "Tecnologia",
+      "title": "Potencial processo do New York Times contra a OpenAI pode significar um “hard reset” no ChatGPT",
+      "description": "O jornal atualizou seus termos, proibindo o uso de artigos e imagens no treinamento de modelos de IA. Um litígio poderia resultar na destruição do conjunto de dados utilizados atualmente pelo ChatGPT. As informações são do site Ars Technica.",
+      "createdAt": "20-07-2023 09:12:14",
+      "typeMachine": "technology",
+      "image": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
+      "likes": 81,
+      "comments": 56
+    },
+    {
+      "id": 3,
+      "idAuthor": 3,
+      "type": "Tecnologia",
+      "title": "Defensoria Pública da União questiona uso de inteligência artificial após indeferimentos automáticos e equivocados no INSS",
+      "description": "A instituição manifestou preocupações com grupos vulneráveis e o aumento potencial de judicialização devido a negações desnecessárias – o sistema obrigava os interessados a esperarem 30 dias para realizarem um novo requerimento após uma negativa. O chamado “Robô do INSS” já decide um terço dos pedidos de aposentadoria, pensão e auxílio no país. As informações são do site Convergência Digital.",
+      "createdAt": "18-07-2023 23:12:14",
+      "typeMachine": "technology",
+      "image": "https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505_1280.jpg",
+      "likes": 55,
+      "comments": 78
+    },
+    {
+      "id": 4,
+      "idAuthor": 4,
+      "type": "Saúde",
+      "title": "WhatsApp agora permite enviar fotos em alta resolução",
+      "description": "O WhatsApp lançou nesta quinta-feira (17) uma nova atualização que permite enviar fotos em alta resolução.O compartilhamento de fotos em HD pode ser utilizado diretamente do mensageiro, permitindo enviar imagens com melhor qualidade.",
+      "createdAt": "17-08-2023 08:45:14",
+      "typeMachine": "technology",
+      "image": "https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg",
+      "likes": 104,
+      "comments": 25
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "post_origin_id": 1,
+      "content_id": 1,
+      "comment": "Agora meu smathphone fica uma lesma.",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 2,
+          "user_origin_id": "3",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "kkkkk...",
+          "created": "1690833921",
+          "likes_count": 2
+        },
+        {
+          "id": 3,
+          "user_origin_id": "2",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
+          "created": "1690833931",
+          "likes_count": 100
+        }
+      ],
+      "likes_count": 80
+    },
+    {
+      "id": 2,
+      "post_origin_id": 2,
+      "content_id": 1,
+      "comment": "Agora meu smathphone fica uma lesma.",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 2,
+          "user_origin_id": "3",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "kkkkk...",
+          "created": "1690833921",
+          "likes_count": 2
+        },
+        {
+          "id": 3,
+          "user_origin_id": "2",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
+          "created": "1690833931",
+          "likes_count": 100
+        }
+      ],
+      "likes_count": 80
+    },
+    {
+      "id": 3,
+      "post_origin_id": 3,
+      "content_id": 1,
+      "comment": "Agora meu smathphone fica uma lesma.",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 2,
+          "user_origin_id": "3",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "kkkkk...",
+          "created": "1690833921",
+          "likes_count": 2
+        },
+        {
+          "id": 3,
+          "user_origin_id": "2",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
+          "created": "1690833931",
+          "likes_count": 100
+        }
+      ],
+      "likes_count": 80
+    },
+    {
+      "id": 4,
+      "post_origin_id": 4,
+      "content_id": 1,
+      "comment": "Agora meu smathphone fica uma lesma.",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 2,
+          "user_origin_id": "3",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "kkkkk...",
+          "created": "1690833921",
+          "likes_count": 2
+        },
+        {
+          "id": 3,
+          "user_origin_id": "2",
+          "user_target_id": "1",
+          "comment_id": "3",
+          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
+          "created": "1690833931",
+          "likes_count": 100
+        }
+      ],
+      "likes_count": 80
+    }
+  ]
+}
