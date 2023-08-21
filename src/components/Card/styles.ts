@@ -13,7 +13,7 @@ interface TextButtonProps {
 
 export const Content = styled.View`
   padding: ${RFValue(15)}px;
-  background-color: ${theme.colors.card_color};
+  background-color: ${theme.colors.card};
   margin-bottom: ${RFValue(5)}px;
   padding: ${RFValue(10)}px ${RFValue(15)}px;
 `;
@@ -21,27 +21,26 @@ export const Content = styled.View`
 export const Title = styled.Text`
   font-family: MavenPro_500Medium;
   font-size: ${RFValue(19)}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
 `;
 
 export const Subtitle = styled.Text`
   font-family: MavenPro_400Regular;
   font-size: ${theme.fontSizes.medium}px;
-  color: ${theme.colors.secondary};
-  align-self: flex-end;
+  color: ${theme.colors.text};
 `;
 
 export const Info = styled.Text`
   font-family: MavenPro_400Regular;
   font-size: ${theme.fontSizes.medium}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   text-align: justify;
   margin-top: ${RFValue(10)}px;
 `;
 
 export const TextButton = styled.Text<TextButtonProps>`
   display: ${({ liked }) => (liked ? "none" : "flex")};
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   font-size: ${theme.fontSizes.small}px;
   font-family: MavenPro_400Regular;
 `;
@@ -92,5 +91,5 @@ export const TextIteraction = styled.Text`
   margin-left: ${RFValue(5)}px;
   font-family: MavenPro_500Medium;
   font-size: ${theme.fontSizes.large}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
 `;

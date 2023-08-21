@@ -112,12 +112,12 @@ export const Comments: FC<CommentsProps> = ({ visible, setVisible }) => {
           <ContentInput>
             <InputComment
               placeholder="Deixe também seu comentário"
-              placeholderTextColor={colors.secondary}
+              placeholderTextColor={colors.text}
               value={valueComment}
               onChangeText={(value) => setValueComment(value)}
             />
             <ButtonSend onPress={registerComment}>
-              <Feather name="send" size={20} color={colors.secondary} />
+              <Feather name="send" size={20} color={colors.text} />
             </ButtonSend>
           </ContentInput>
           <CloseButton onPress={() => setVisible(false)}>

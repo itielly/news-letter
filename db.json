@@ -2,165 +2,217 @@
   "notices": [
     {
       "id": 1,
-      "idAuthor": 1,
       "type": "Tecnologia",
       "title": "WhatsApp agora permite enviar fotos em alta resolução",
       "description": "O WhatsApp lançou nesta quinta-feira (17) uma nova atualização que permite enviar fotos em alta resolução.O compartilhamento de fotos em HD pode ser utilizado diretamente do mensageiro, permitindo enviar imagens com melhor qualidade.",
       "createdAt": "17-08-2023 08:45:14",
-      "typeMachine": "technology",
       "image": "https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg",
       "likes": 103,
-      "comments": 25
+      "comments": 3
     },
     {
       "id": 2,
-      "idAuthor": 2,
+      "type": "Saúde",
+      "title": "Política nacional do câncer é celebrada, mas ainda há longo caminho para sua efetivação",
+      "description": "O Instituto Nacional de Câncer (Inca) prevê que o Brasil deve registrar 704 mil novos casos de câncer por ano até 2025 e 225 mil mortes pela doença a cada 12 meses. Apesar da evolução nos tratamentos nos últimos anos, o acesso desigual aos serviços de saúde e a falta de infraestrutura adequada em algumas regiões são alguns dos desafios.",
+      "createdAt": "20-07-2023 09:12:14",
+      "image": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
+      "likes": 15,
+      "comments": 1
+    },
+    {
+      "id": 3,
+      "type": "Política",
+      "title": "Ministro de Assuntos Digitais do Japão abre mão de três meses de salário como penalização após má implementação do sistema de identificação digital do país",
+      "description": "Taro Kono prometeu consertar problemas no My Number Card até novembro deste ano. O Japão, apesar de ter uma das economias mais avançadas do mundo, tem dificuldade em implantar sistemas digitais modernos – no ano passado, se comprometeu a não utilizar mais disquetes e CD-ROMs, e tenta reduzir a dependência do uso de aparelhos de fax no país. As informações são do site The Register.",
+      "createdAt": "20-07-2023 09:12:14",
+      "likes": 56,
+      "comments": 3
+    },
+    {
+      "id": 4,
       "type": "Tecnologia",
       "title": "Potencial processo do New York Times contra a OpenAI pode significar um “hard reset” no ChatGPT",
       "description": "O jornal atualizou seus termos, proibindo o uso de artigos e imagens no treinamento de modelos de IA. Um litígio poderia resultar na destruição do conjunto de dados utilizados atualmente pelo ChatGPT. As informações são do site Ars Technica.",
       "createdAt": "20-07-2023 09:12:14",
-      "typeMachine": "technology",
       "image": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
       "likes": 81,
-      "comments": 56
+      "comments": 2
     },
     {
-      "id": 3,
-      "idAuthor": 3,
+      "id": 5,
+      "type": "Saúde",
+      "title": "Brasil olha para a saúde de imigrantes e refugiados e busca construir uma política nacional",
+      "description": "O Brasil sempre foi aberto a receber populações de outras nacionalidades, sejam refugiados ou que vieram buscar novas oportunidades de trabalho e estudo. Estimativas do Ministério da Justiça e Segurança Pública apontam que 1,3 milhão de imigrantes residem no país. Com isso, surge a demanda para que os sistemas de saúde estejam aptos a receber esse grupo e prestarem um serviço universal, com equidade e integralidade – como orienta os princípios do SUS.",
+      "createdAt": "20-07-2023 09:12:14",
+      "likes": 23,
+      "comments": 1
+    },
+    {
+      "id": 6,
+      "type": "Política",
+      "title": "STF está aniquilando essência do juiz de garantias, diz presidente do Ibccrim",
+      "description": "Com maioria de votos formada a favor da implantação obrigatória do juiz de garantias no país, o Supremo Tribunal Federal (STF) caminha para alterar uma das principais atribuições desse novo magistrado: a competência para receber a denúncia oferecida pela acusação.",
+      "createdAt": "20-07-2023 09:12:14",
+      "likes": 18,
+      "comments": 1
+    },
+    {
+      "id": 7,
       "type": "Tecnologia",
       "title": "Defensoria Pública da União questiona uso de inteligência artificial após indeferimentos automáticos e equivocados no INSS",
       "description": "A instituição manifestou preocupações com grupos vulneráveis e o aumento potencial de judicialização devido a negações desnecessárias – o sistema obrigava os interessados a esperarem 30 dias para realizarem um novo requerimento após uma negativa. O chamado “Robô do INSS” já decide um terço dos pedidos de aposentadoria, pensão e auxílio no país. As informações são do site Convergência Digital.",
       "createdAt": "18-07-2023 23:12:14",
-      "typeMachine": "technology",
       "image": "https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505_1280.jpg",
-      "likes": 55,
-      "comments": 78
-    },
-    {
-      "id": 4,
-      "idAuthor": 4,
-      "type": "Saúde",
-      "title": "WhatsApp agora permite enviar fotos em alta resolução",
-      "description": "O WhatsApp lançou nesta quinta-feira (17) uma nova atualização que permite enviar fotos em alta resolução.O compartilhamento de fotos em HD pode ser utilizado diretamente do mensageiro, permitindo enviar imagens com melhor qualidade.",
-      "createdAt": "17-08-2023 08:45:14",
-      "typeMachine": "technology",
-      "image": "https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg",
-      "likes": 104,
-      "comments": 25
+      "likes": 100,
+      "comments": 2
     }
   ],
   "comments": [
     {
       "id": 1,
       "post_origin_id": 1,
-      "content_id": 1,
       "comment": "Agora meu smathphone fica uma lesma.",
       "created": "1690833821",
       "replies": [
         {
           "id": 2,
-          "user_origin_id": "3",
-          "user_target_id": "1",
-          "comment_id": "3",
           "comment": "kkkkk...",
-          "created": "1690833921",
-          "likes_count": 2
+          "created": "1690833921"
         },
         {
           "id": 3,
-          "user_origin_id": "2",
-          "user_target_id": "1",
-          "comment_id": "3",
           "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
-          "created": "1690833931",
-          "likes_count": 100
+          "created": "1690833931"
         }
       ],
       "likes_count": 80
     },
     {
       "id": 2,
-      "post_origin_id": 2,
-      "content_id": 1,
-      "comment": "Agora meu smathphone fica uma lesma.",
+      "post_origin_id": 1,
+      "comment": "Já estava na hora!",
       "created": "1690833821",
-      "replies": [
-        {
-          "id": 2,
-          "user_origin_id": "3",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "kkkkk...",
-          "created": "1690833921",
-          "likes_count": 2
-        },
-        {
-          "id": 3,
-          "user_origin_id": "2",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
-          "created": "1690833931",
-          "likes_count": 100
-        }
-      ],
-      "likes_count": 80
+      "replies": [],
+      "likes_count": 12
     },
     {
       "id": 3,
-      "post_origin_id": 3,
-      "content_id": 1,
-      "comment": "Agora meu smathphone fica uma lesma.",
+      "post_origin_id": 1,
+      "comment": "Quando será que sai essa atualização?",
       "created": "1690833821",
       "replies": [
         {
           "id": 2,
-          "user_origin_id": "3",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "kkkkk...",
-          "created": "1690833921",
-          "likes_count": 2
-        },
+          "comment": "Pra chegar no brasil vai demorar...",
+          "created": "1690833921"
+        }
+      ],
+      "likes_count": 0
+    },
+    {
+      "id": 4,
+      "post_origin_id": 2,
+      "comment": "De fato, ainda tem muita coisa a ser feita",
+      "created": "1690833821",
+      "replies": [
         {
-          "id": 3,
-          "user_origin_id": "2",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
-          "created": "1690833931",
-          "likes_count": 100
+          "id": 2,
+          "comment": "Totalmente",
+          "created": "1690833921"
         }
       ],
       "likes_count": 80
     },
     {
-      "id": 4,
-      "post_origin_id": 4,
-      "content_id": 1,
-      "comment": "Agora meu smathphone fica uma lesma.",
+      "id": 5,
+      "post_origin_id": 3,
+      "comment": "Duvido fazerem isso aqui também",
       "created": "1690833821",
       "replies": [
         {
           "id": 2,
-          "user_origin_id": "3",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "kkkkk...",
-          "created": "1690833921",
-          "likes_count": 2
-        },
-        {
-          "id": 3,
-          "user_origin_id": "2",
-          "user_target_id": "1",
-          "comment_id": "3",
-          "comment": "Não vai fazer diferença, a tela do meu celular tá trincada mesmo, kkkk",
-          "created": "1690833931",
-          "likes_count": 100
+          "comment": "IMPOSSÍVEL KKKKK",
+          "created": "1690833921"
         }
       ],
-      "likes_count": 80
+      "likes_count": 150
+    },
+    {
+      "id": 6,
+      "post_origin_id": 3,
+      "comment": "E ta errado?",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 2
+    },
+    {
+      "id": 7,
+      "post_origin_id": 3,
+      "comment": "Japão sendo japão",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 0
+    },
+    {
+      "id": 8,
+      "post_origin_id": 4,
+      "comment": "O que será dos desenvolvedores chat gpt?",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 1,
+          "comment": "KKKKKKKKK",
+          "created": "1690833921"
+        }
+      ],
+      "likes_count": 200
+    },
+    {
+      "id": 9,
+      "post_origin_id": 4,
+      "comment": "Stackoverflow comemora!!!",
+      "created": "1690833821",
+      "replies": [
+        {
+          "id": 1,
+          "comment": "Vão voltar as raízes",
+          "created": "1690833921"
+        }
+      ],
+      "likes_count": 200
+    },
+    {
+      "id": 10,
+      "post_origin_id": 5,
+      "comment": "Amém!",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 10
+    },
+    {
+      "id": 11,
+      "post_origin_id": 6,
+      "comment": "Nunca teve essencia...",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 1
+    },
+    {
+      "id": 12,
+      "post_origin_id": 7,
+      "comment": "E mais dinheiro indo pra onde não sabemos",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 10
+    },
+    {
+      "id": 13,
+      "post_origin_id": 7,
+      "comment": "E vão deixar máquina cuidando do nosso dinheiro?",
+      "created": "1690833821",
+      "replies": [],
+      "likes_count": 0
     }
   ]
 }

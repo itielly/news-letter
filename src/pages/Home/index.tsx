@@ -57,7 +57,7 @@ export const Home = () => {
             style={{
               color: "#fff",
               width: "60%",
-              fontSize: 15,
+              alignSelf: "flex-end",
             }}
           >
             <Picker.Item key={0} label="Todos" value="" />

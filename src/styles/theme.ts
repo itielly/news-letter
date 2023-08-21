@@ -2,14 +2,12 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 export default {
   colors: {
-    primary: "#00349a",
-    secondary: "#f3f6f4",
+    text: "#f3f6f4",
     background_global: "#3f393c",
-    primaryText: "#f1f1f1",
     like: "#539ed6",
     comment: "#b1cc74",
     background_black_light: "rgba(0,0,0,0.25)",
-    card_color: "#2a2427",
+    card: "#2a2427",
   },
   fonts: {
     regular: "MavenPro_400Regular",

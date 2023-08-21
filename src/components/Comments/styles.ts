@@ -18,7 +18,7 @@ export const Background = styled.KeyboardAvoidingView`
 `;
 
 export const Content = styled.View`
-  background-color: ${theme.colors.card_color};
+  background-color: ${theme.colors.card};
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ export const Content = styled.View`
 export const Title = styled.Text`
   font-family: MavenPro_500Medium;
   font-size: ${theme.fontSizes.xlarge}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   margin-left: 5px;
 `;
 
@@ -48,36 +48,36 @@ export const ContentComment = styled.View`
 export const Name = styled.Text`
   font-family: MavenPro_500Medium;
   font-size: ${theme.fontSizes.medium}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
 `;
 
 export const Comment = styled.Text`
   font-family: MavenPro_400Regular;
   font-size: ${theme.fontSizes.smalls}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   text-align: justify;
 `;
 
 export const CloseButton = styled.TouchableOpacity`
   align-self: flex-end;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   padding: ${RFValue(10)}px;
 `;
 
 export const TextButton = styled.Text`
   font-family: MavenPro_400Regular;
   font-size: ${theme.fontSizes.smalls}px;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
 `;
 
 export const InputComment = styled.TextInput`
-  border: 1px solid ${theme.colors.secondary};
+  border: 1px solid ${theme.colors.text};
   padding: ${RFValue(5)}px ${RFValue(10)}px;
   border-radius: ${RFValue(5)}px;
   width: 98%;
   height: ${RFValue(40)}px;
   align-self: center;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
 `;
 
 export const ButtonSend = styled.TouchableOpacity`

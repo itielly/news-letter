@@ -11,13 +11,13 @@ export const Content = styled.View`
 
 export const Title = styled.Text`
   font-family: MavenPro_600SemiBold;
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   font-size: ${RFValue(30)}px;
   text-align: center;
 `;
 
 export const SubTitle = styled.Text`
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   font-size: ${RFValue(18)}px;
   font-family: MavenPro_500Medium;
   text-align: center;
@@ -37,7 +37,7 @@ export const Button = styled.TouchableOpacity`
 `;
 
 export const TextButton = styled.Text`
-  color: ${theme.colors.secondary};
+  color: ${theme.colors.text};
   font-size: ${RFValue(15)}px;
   font-family: MavenPro_700Bold;
   text-align: center;

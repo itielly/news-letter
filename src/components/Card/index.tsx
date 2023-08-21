@@ -35,18 +35,20 @@ export const Card: FC<CardProps> = ({ data, getComments, index }) => {
     <Content>
       <Section>
         <ContentTitle>
-          <Subtitle>{type}</Subtitle>
           <Title>{title}</Title>
+          <Subtitle>{type}</Subtitle>
         </ContentTitle>
       </Section>
       <Info>{description}</Info>
-      <ImagePost
-        resizeMode="cover"
-        imageStyle={{ borderRadius: 5 }}
-        source={{
-          uri: image,
-        }}
-      />
+      {image && (
+        <ImagePost
+          resizeMode="cover"
+          imageStyle={{ borderRadius: 5 }}
+          source={{
+            uri: image,
+          }}
+        />
+      )}
       <ContentIteraction>
         <ButtonIteracion onPress={() => getComments(id)} activeOpacity={0.8}>
           <ContentReactions>
@@ -70,7 +72,7 @@ export const Card: FC<CardProps> = ({ data, getComments, index }) => {
             <AntDesign
               name="like2"
               size={hasLiked ? 24 : 16}
-              color={hasLiked ? colors.like : colors.secondary}
+              color={hasLiked ? colors.like : colors.text}
             />
             <TextButton liked={hasLiked}>Gostei</TextButton>
           </ButtonReact>
@@ -82,7 +84,7 @@ export const Card: FC<CardProps> = ({ data, getComments, index }) => {
             <MaterialCommunityIcons
               name="comment-text-outline"
               size={16}
-              color={colors.secondary}
+              color={colors.text}
             />
             <TextButton>Comentar</TextButton>
           </ButtonReact>

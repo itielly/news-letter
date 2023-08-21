@@ -27,7 +27,7 @@ export const Splash = () => {
           width: RFValue(300),
           height: RFValue(300),
         }}
-        source={require("../../assets/animation/4.json")}
+        source={require("../../assets/animation/splash-animation.json")}
       />
     </Container>
   );
