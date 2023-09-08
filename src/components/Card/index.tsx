@@ -28,7 +28,7 @@ interface CardProps {
 export const Card: FC<CardProps> = ({ data, getComments, index }) => {
   const { id, type, title, description, image, comments } = data;
   const { colors } = useTheme();
-  const { doLike, likes } = useAppContext();
+  const { doLike, likes, setIdNewSelected } = useAppContext();
   const hasLiked = likes.some((el) => el === id);
 
   return (
@@ -50,7 +50,13 @@ export const Card: FC<CardProps> = ({ data, getComments, index }) => {
         />
       )}
       <ContentIteraction>
-        <ButtonIteracion onPress={() => getComments(id)} activeOpacity={0.8}>
+        <ButtonIteracion
+          onPress={() => {
+            getComments(id);
+            setIdNewSelected(id);
+          }}
+          activeOpacity={0.8}
+        >
           <ContentReactions>
             <AntDesign name="like2" size={15} color={colors.like} />
             <TextIteraction>{data.likes}</TextIteraction>
@@ -79,7 +85,10 @@ export const Card: FC<CardProps> = ({ data, getComments, index }) => {
           <ButtonReact
             changePadding
             activeOpacity={0.8}
-            onPress={() => getComments(id)}
+            onPress={() => {
+              getComments(id);
+              setIdNewSelected(id);
+            }}
           >
             <MaterialCommunityIcons
               name="comment-text-outline"

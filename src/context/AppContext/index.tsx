@@ -2,27 +2,15 @@ import { createContext, useContext, useMemo, useState } from "react";
 import { Alert } from "react-native";
 import { CommentsType, NoticeType } from "../../pages/Home/types";
 import { AppService } from "./service";
-
-interface iAppContext {
-  news: (type?: string) => Promise<boolean | undefined>;
-  comments: (id: number) => Promise<boolean | undefined>;
-  doComment: (comment: string, id: number) => Promise<boolean>;
-  likes: number[];
-  commentsList: CommentsType[];
-  newsList: NoticeType[];
-  doLike: (
-    id: number,
-    numberLikes: number,
-    index: number
-  ) => Promise<false | undefined>;
-}
+import { Children, iAppContext } from "./types";
 
 const AppContext = createContext<iAppContext>({} as iAppContext);
 
-export const AppProvider = ({ children }: any) => {
-  const [likes, setLikes] = useState<Array<number>>([]);
+export const AppProvider = ({ children }: Children) => {
+  const [likes, setLikes] = useState<number[]>([]);
   const [newsList, setNewsList] = useState<NoticeType[]>([]);
   const [commentsList, setCommentsList] = useState<CommentsType[]>([]);
+  const [idNewSelected, setIdNewSelected] = useState(0);
 
   const service = AppService();
 
@@ -100,9 +88,9 @@ export const AppProvider = ({ children }: any) => {
     }
   };
 
-  const doComment = async (comment: string, id: number) => {
+  const doComment = async (comment: string) => {
     try {
-      const result = await service.postComment(comment, id);
+      const result = await service.postComment(comment, idNewSelected);
       if (result.status !== 201) {
         Alert.alert(
           "Opss.. não foi possível salvar seu comentário",
@@ -111,7 +99,7 @@ export const AppProvider = ({ children }: any) => {
             {
               text: "Cancelar",
             },
-            { text: "OK", onPress: () => doComment(comment, id) },
+            { text: "OK", onPress: () => doComment(comment) },
           ]
         );
         return false;
@@ -127,7 +115,7 @@ export const AppProvider = ({ children }: any) => {
           {
             text: "Cancelar",
           },
-          { text: "OK", onPress: () => doComment(comment, id) },
+          { text: "OK", onPress: () => doComment(comment) },
         ]
       );
       return false;
@@ -179,8 +167,20 @@ export const AppProvider = ({ children }: any) => {
       doComment,
       commentsList,
       newsList,
+      idNewSelected,
+      setIdNewSelected,
     }),
-    [news, comments, doLike, likes, doComment, commentsList, newsList]
+    [
+      news,
+      comments,
+      doLike,
+      likes,
+      doComment,
+      commentsList,
+      newsList,
+      idNewSelected,
+      setIdNewSelected,
+    ]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

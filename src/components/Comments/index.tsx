@@ -50,15 +50,11 @@ export const Comments: FC<CommentsProps> = ({ visible, setVisible }) => {
 
   const registerComment = async () => {
     if (valueComment !== "") {
-      let id = data.find((el) => el.post_origin_id)?.post_origin_id;
+      const result = await doComment(valueComment);
 
-      if (id) {
-        const result = await doComment(valueComment, id);
-
-        if (result) {
-          setValueComment("");
-          Keyboard.dismiss();
-        }
+      if (result) {
+        setValueComment("");
+        Keyboard.dismiss();
       }
     }
   };
